@@ -1,0 +1,31 @@
+<p>demo works!</p>
+
+<input type="text" [(ngModel)]="hello">
+
+<div *ngIf="hello === 'Uli'">
+  este es un div
+</div>
+
+
+
+<span [ngSwitch]="hello">
+<p *ngSwitchCase="'Ulises'">
+  Bienvenido Ulises
+</p>
+<p *ngSwitchCase="'Paku'">
+  Bienvenido Paku
+</p>
+<p *ngSwitchDefault>
+  Sin determinar
+</p>
+</span>
+
+<button (click)="addItem()">Agregar Item</button>
+
+<div>
+  <li *ngIf="listaNombres.length === 0"> Lista esta vacia </li>
+  <li *ngFor="let item of listaNombres; index as i">
+    {{item}} {{i}}
+    <button (click)="deleteItem(i)"> Eliminar </button>
+  </li>
+</div>

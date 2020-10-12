@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "qatu-pwa"
+    }
+  },
+  "defaultProject": "qatu-pwa",
+  "cli": {
+    "analytics": false
+  }
 }

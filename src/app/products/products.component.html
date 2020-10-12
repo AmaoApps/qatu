@@ -1,0 +1,8 @@
+<p>products works!</p>
+<div class="product-grid">
+    <app-productv1
+      *ngFor="let producto of listaProducts" 
+      (productClicked)="clickProduct($event)" 
+      [producto]="producto">
+    </app-productv1>
+  </div>
